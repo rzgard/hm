@@ -1,0 +1,484 @@
+#include <stdio.h>
+int main()
+{
+  int a, b,c,e;
+if(e==8)
+{ 
+
+printf("                           -hesap makinesi-");
+printf(" \n toplama=1 \n çıkarma=2 \n çarpma=3 \n bölme=4 \n karekök=5 \n kare=6 \n küp=7  \n EKOK =9 \n EBOB=10 ");
+printf("\n hangi işlemi yapacaksın(1,2,3,4,5,6,7,8,9,10,)");
+scanf("%d" ,&d);
+
+
+
+
+if(d== 1)
+{
+printf("\n ilk sayıyı giriniz\n ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz\n ");
+scanf("%d" ,&b);
+c=a + b;
+printf("\n toplamları %d + %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if(d == 2)
+{
+printf("\n ilk sayıyı giriniz ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz ");
+scanf("%d" ,&b);
+c=a - b;
+printf("\n farkları %d - %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d == 3)
+
+{
+printf("\n ilk sayıyı giriniz ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz ");
+scanf("%d" ,&b);
+c=a * b;
+printf("\n çarpımları %d x %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if(d == 4)
+
+{
+printf("\n ilk sayıyı giriniz ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz ");
+scanf("%d" ,&b);
+
+if(a==0)
+{
+printf(" tanımsızdır");
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+printf("\n bölümleri %d / %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+
+if(d == 5)
+
+{
+printf("\n sayıyı giriniz ");
+scanf("%d" ,&a);
+{ 
+if(a<=0){
+printf(" %d sayıyısı negatif olduğu için karekök içinde yazılamazdır",a);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+}
+if (a>=0)
+{ 
+printf("\n karekökü %2.f" , sqrt(a)); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+}
+if(d == 6)
+{
+printf("\n sayıyı giriniz ");
+scanf("%d" ,&a);  
+c=a * a;
+printf("\n karesi %d x %d = %d ", a,a,c); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d == 7)
+
+{
+printf("\n sayıyı giriniz ");
+scanf("%d" ,&a);
+c=a * a * a;
+printf("\n karesi %d x %d x %d = %d ", a,a,a,c); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if (d==8)
+{
+printf("\n Birinci Sayiyi Giriniz: ");
+scanf("%d", &a);
+printf("\n Ikinci Sayiyi Giriniz: ");
+scanf("%d", &b);
+ 
+if (a > b)
+    l = a;
+else
+   l = b;
+ 
+ 
+z = a;
+u = b;
+ 
+while (i <= l) {
+h = 0;
+  if (z % i == 0) {
+     z /= i;
+            h++;
+ }
+if (u % i == 0) {
+  u /= i;
+h++;
+}
+if (h != 0)
+sonuc *= i;
+ 
+if (z % i != 0 && u % i != 0)
+ i++;
+    }
+ 
+ printf("\n EKOK(%d,%d) = %d", a, b, sonuc);
+    
+ 
+}
+if(d == 9)
+{ 
+printf("\n ilk sayıyı giriniz\n ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz\n ");
+scanf("%d" ,&b);
+ for(i=1; i <= a && i <= b; ++i)
+    {
+        if(a%i==0 && b%i==0)
+            c = i;
+    }
+printf(" %d ve %d sayılarının ebobu %d dir",a,b,c);
+}
+if(d > 10)
+{
+
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+printf("\n toplamları %d + %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d < 1)
+{
+
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if (d==9)
+{
+printf("\n Birinci Sayiyi Giriniz: ");
+scanf("%d", &a);
+printf("\n Ikinci Sayiyi Giriniz: ");
+scanf("%d", &b);
+ 
+if (a > b)
+    l = a;
+else
+   l = b;
+ 
+ 
+z = a;
+u = b;
+ 
+while (i <= l) {
+h = 0;
+  if (z % i == 0) {
+     z /= i;
+            h++;
+ }
+if (u % i == 0) {
+  u /= i;
+h++;
+}
+if (h != 0)
+sonuc *= i;
+ 
+if (z % i != 0 && u % i != 0)
+ i++;
+    }
+ 
+ printf("\n EKOK(%d,%d) = %d", a, b, sonuc);
+    
+ printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d == 10)
+{ 
+printf("\n ilk sayıyı giriniz\n ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz\n ");
+scanf("%d" ,&b);
+ for(i=1; i <= a && i <= b; ++i)
+    {
+        if(a%i==0 && b%i==0)
+            c = i;
+    }
+printf(" %d ve %d sayılarının ebobu %d dir",a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d > 9)
+{
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+
+}
+if(d < 1)
+{
+
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+
+}
+}
+if(e==8)
+{ 
+
+printf("                           -hesap makinesi-");
+printf(" \n toplama=1 \n çıkarma=2 \n çarpma=3 \n bölme=4 \n karekök=5 \n kare=6 \n küp=7  \n EKOK =9 \n EBOB=10 ");
+printf("\n hangi işlemi yapacaksın(1,2,3,4,5,6,7,8,9,10,)");
+scanf("%d" ,&d);
+
+
+
+
+if(d== 1)
+{
+printf("\n ilk sayıyı giriniz\n ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz\n ");
+scanf("%d" ,&b);
+c=a + b;
+printf("\n toplamları %d + %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if(d == 2)
+{
+printf("\n ilk sayıyı giriniz ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz ");
+scanf("%d" ,&b);
+c=a - b;
+printf("\n farkları %d - %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d == 3)
+
+{
+printf("\n ilk sayıyı giriniz ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz ");
+scanf("%d" ,&b);
+c=a * b;
+printf("\n çarpımları %d x %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if(d == 4)
+
+{
+printf("\n ilk sayıyı giriniz ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz ");
+scanf("%d" ,&b);
+
+if(a==0)
+{
+printf(" tanımsızdır");
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+printf("\n bölümleri %d / %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+
+if(d == 5)
+
+{
+printf("\n sayıyı giriniz ");
+scanf("%d" ,&a);
+{ 
+if(a<=0){
+printf(" %d sayıyısı negatif olduğu için karekök içinde yazılamazdır",a);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+}
+if (a>=0)
+{ 
+printf("\n karekökü %2.f" , sqrt(a)); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+}
+if(d == 6)
+{
+printf("\n sayıyı giriniz ");
+scanf("%d" ,&a);  
+c=a * a;
+printf("\n karesi %d x %d = %d ", a,a,c); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d == 7)
+
+{
+printf("\n sayıyı giriniz ");
+scanf("%d" ,&a);
+c=a * a * a;
+printf("\n karesi %d x %d x %d = %d ", a,a,a,c); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if (d==8)
+{
+printf("\n Birinci Sayiyi Giriniz: ");
+scanf("%d", &a);
+printf("\n Ikinci Sayiyi Giriniz: ");
+scanf("%d", &b);
+ 
+if (a > b)
+    l = a;
+else
+   l = b;
+ 
+ 
+z = a;
+u = b;
+ 
+while (i <= l) {
+h = 0;
+  if (z % i == 0) {
+     z /= i;
+            h++;
+ }
+if (u % i == 0) {
+  u /= i;
+h++;
+}
+if (h != 0)
+sonuc *= i;
+ 
+if (z % i != 0 && u % i != 0)
+ i++;
+    }
+ 
+ printf("\n EKOK(%d,%d) = %d", a, b, sonuc);
+    
+ 
+}
+if(d == 9)
+{ 
+printf("\n ilk sayıyı giriniz\n ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz\n ");
+scanf("%d" ,&b);
+ for(i=1; i <= a && i <= b; ++i)
+    {
+        if(a%i==0 && b%i==0)
+            c = i;
+    }
+printf(" %d ve %d sayılarının ebobu %d dir",a,b,c);
+}
+if(d > 9)
+{
+
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+printf("\n toplamları %d + %d = %d ", a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d < 1)
+{
+
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+
+if (d==8)
+{
+printf("\n Birinci Sayiyi Giriniz: ");
+scanf("%d", &a);
+printf("\n Ikinci Sayiyi Giriniz: ");
+scanf("%d", &b);
+ 
+if (a > b)
+    l = a;
+else
+   l = b;
+ 
+ 
+z = a;
+u = b;
+ 
+while (i <= l) {
+h = 0;
+  if (z % i == 0) {
+     z /= i;
+            h++;
+ }
+if (u % i == 0) {
+  u /= i;
+h++;
+}
+if (h != 0)
+sonuc *= i;
+ 
+if (z % i != 0 && u % i != 0)
+ i++;
+    }
+ 
+ printf("\n EKOK(%d,%d) = %d", a, b, sonuc);
+    
+ printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d == 10)
+{ 
+printf("\n ilk sayıyı giriniz\n ");
+scanf("%d" ,&a);
+printf("\n ikinci sayıyı giriniz\n ");
+scanf("%d" ,&b);
+ for(i=1; i <= a && i <= b; ++i)
+    {
+        if(a%i==0 && b%i==0)
+            c = i;
+    }
+printf(" %d ve %d sayılarının ebobu %d dir",a,b,c);
+printf("\n Tekrar başlamak için 8 yazınız");
+scanf("%d",&e);
+}
+if(d > 9)
+{
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+
+}
+if(d < 1)
+{
+
+printf("\n %d sayı işlemlerimizde bulunmuyor lütfen tekrar deneyin. ", d); 
+}
+}
+  return 0;
+}
+
